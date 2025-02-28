@@ -16,24 +16,15 @@
 
 </head>
 <body>
-<?php
-    session_start();
-    if(empty($_SESSION['nombre'])){
-        $usuarioMostrar="invitado";
-    }else{
-        $usuarioMostrar=$_SESSION['nombre'];
-    }
-    
-        
-?>
+
     <header>
         <div class="navbar">
-          <a href="principal.php"><img class="logo" src="img/logo.png" alt="No Image"></a>
+          <a href="principal.html"><img class="logo" src="img/logo.png" alt="No Image"></a>
             <div class="nav">
               
                 <a href="#inicio">INICIO</a>
                 <a href="#tienda">TIENDA</a>
-                <a href="trivia.php">TRIVIA</a>
+                <a href="trivia.html">TRIVIA</a>
                 <a href="#contactanos">CONTÁCTANOS</a>
                 
             </div>
@@ -44,14 +35,12 @@
             
               <ul class="dropdown-menu ">
                 <li><a class="dropdown-item" href="#tienda">TIENDA</a></li>
-                <li><a class="dropdown-item" href="trivia.php">TRIVIA</a></li>
+                <li><a class="dropdown-item" href="trivia.html">TRIVIA</a></li>
                 <li><a class="dropdown-item" href="#contactanos">CONTACTÁNOS</a></li>
               </ul>
             </div>
-            <!-- <button class="btn-head"><a href="index.php">INICIAR SESIÓN</a></button> -->
-            <?php  
-              echo "<h1 class='nombre'> Bienvenido $usuarioMostrar</h1>"; 
-            ?>
+             <button class="btn-head"><a href="index.html">INICIAR SESIÓN</a></button> 
+            
           </div>
           <style>
             .nombre{
@@ -166,7 +155,7 @@
               <img class="ancho" src="img/Principal/ActividadesLibres.jpg" alt="">
               <p class="precio">TODAS LAS ACTIVIDADES<br>
               $40.000</p>
-              <button class="bprincipal"><a href="compra.php">COMPRAR</a></button>
+              <button class="bprincipal"><a href="compra.html">COMPRAR</a></button>
              <!-- <p>Compra No Disponible</p> -->
               <p class="texto">¡Consigue acceso total a nuestro gimnasio! 🏋️‍♂️🔥 Disfruta de todas las actividades, entrena cuando quieras y a la hora que más te convenga. ¡Inscríbete hoy y lleva tu entrenamiento al siguiente nivel! 🚀</p>
           
@@ -176,7 +165,7 @@
              <img class="ancho" src="img/Principal/EntrenamientoMusculacion.jpg" alt="">
              <p class="precio">GIMNASIO<br>
              $20.000</p>
-              <button class="bprincipal"><a href="compra.php">COMPRAR</a></button>
+              <button class="bprincipal"><a href="compra.html">COMPRAR</a></button>
               <!-- <p>Compra No Disponible</p>  -->
               <p class="texto">¡Accede libremente a nuestro gimnasio! 🏋️‍♂️🔥 Entrena con el mejor equipamiento, a la hora que prefieras y sin restricciones. ¡Inscríbete hoy y lleva tu rendimiento al siguiente nivel! 🚀</p>
  
@@ -186,7 +175,7 @@
               <img class="ancho" src="img/Principal/EntrenamientoCrossfit.jpg" alt="">
               <p class="precio">CROSSFIT <br>
               $24.000</p>
-              <button class="bprincipal"><a href="compra.php">COMPRAR</a></button>
+              <button class="bprincipal"><a href="compra.html">COMPRAR</a></button>
               <!-- <p>Compra No Disponible</p>  -->
               <p class="texto">¡Desafía tus límites con CrossFit! 💪🔥 Entrena fuerza, resistencia y velocidad con rutinas intensas. Supera cada reto, mejora tu condición y transforma tu cuerpo. ¡Inscríbete hoy y rompe tus barreras! 🚀</p>
             </div>
@@ -195,7 +184,7 @@
               <img class="ancho" src="img/Principal/EntrenamientoFuncional.jpg" alt="">
              <p class="precio">FUNCIONAL <br>
               $15.000</p>
-              <button class="bprincipal"><a href="compra.php">COMPRAR</a></button>
+              <button class="bprincipal"><a href="compra.html">COMPRAR</a></button>
               <!-- <p>Compra No Disponible</p>  -->
               <p class="texto">¡Entrena como nunca con Funcional! ⚡ Mejora fuerza, agilidad y resistencia con ejercicios dinámicos. Potencia tu rendimiento y alcanza tu mejor versión. ¡Únete hoy y siente el cambio en cada entrenamiento! 🚀</p>
           
@@ -205,7 +194,7 @@
              <img class="ancho" src="img/Principal/EntrenamientoBoxeo.jpg" alt="">
               <p class="precio">BOXEO <br>
              $20.000</p>
-              <button class="bprincipal"><a href="compra.php">COMPRAR</a></button>
+              <button class="bprincipal"><a href="compra.html">COMPRAR</a></button>
               <!-- <p>Compra No Disponible</p>  -->
               <p class="texto">¡Golpea fuerte y entrena con intensidad! 🥊🔥 Mejora tu velocidad, coordinación y resistencia mientras te pones en forma. Libera estrés y fortalece tu mente. ¡Inscríbete hoy y conviértete en tu mejor versión! 🚀</p>
             </div>
@@ -217,13 +206,10 @@
         <!-- Fin De Tienda -->
          <!-- Comienzo Contactarse -->
 
-        <?php
-         include("conexion.php"); //Acá incluimos el archivo con la conexión
-         include("control_form.php"); //Acá inlcuimos el archivo con el control del registro
-        ?>
+        
           <section id="contactanos" class="contacto">
             <div class="contac">
-              <form action="principal.php" method="POST">
+              <form action="" method="POST">
                 <h1>CONTACTÁNOS!!!</h1>
                 <label for="">Tu Nombre</label>
                 <br>

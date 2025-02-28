@@ -90,7 +90,11 @@ div p a:hover{
 
     transition: 0.3s ease;
 }
-
+.btn a{
+    color: #fff;
+    text-decoration: none;
+    
+}
 button:hover{
     background-color: rgb(255, 7, 7);
     

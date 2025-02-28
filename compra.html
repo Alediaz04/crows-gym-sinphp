@@ -14,29 +14,18 @@
 </head>
 <body>
     <header>
-    <?php
-       session_start();
-       if(empty($_SESSION['nombre'])){
-        $usuarioMostrar="invitado";
-       }else{
-         $usuarioMostrar=$_SESSION['nombre'];
-        }
     
-        
-      ?>
         <div class="navbar">
-        <a href="principal.php"><img class="logo" src="img/logo.png" width="50px" alt="No Image"></a>
+        <a href="principal.html"><img class="logo" src="img/logo.png" width="50px" alt="No Image"></a>
             <div class="nav">
               
-                <a href="principal.php">VOLVER AL INICIO</a>
+                <a href="principal.html">VOLVER AL INICIO</a>
                 
                 
             </div>
             
-            <!-- <button class="btn-head"><a href="index.php">INICIAR SESIÓN</a></button> -->
-            <?php  
-              echo "<h1 class='nombre'> Bienvenido $usuarioMostrar</h1>"; 
-              ?>
+            <button class="btn-head"><a href="index.html">INICIAR SESIÓN</a></button> 
+            
           <style>
             .nombre{
               color: red;
@@ -56,7 +45,7 @@
             <span class="fisico">¡¡¡CONSIGUE TU PRIME!!!</span> </p>
         </div>
         <div class="form">
-            <form action="control_compra.php" method="post">
+            <form action="" method="post">
                 <h1 class="title">REALIZA TU COMPRA!!</h1>
                 <h3>Rellena con tus datos</h3>
                 <label for="" >Nombre:</label><br>
